@@ -20,14 +20,14 @@
     padding-top: 1rem;
     align-items: center;
 }
-.navbar__unorder{
+.navbar__list{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 30px;
     align-items: center;
 }
-.navbar__list {
+.navbar__list-item {
     list-style: none;  
 }
 .navbar__link {
@@ -64,19 +64,19 @@
     text-align: center;
     letter-spacing: 0.2px;
 }
-.text {
+.description {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
     color: #737373;
 }
-.text--experts {
+.description--experts {
     font-size: 20px;
     line-height: 30px;
     text-align: center;
 }
-.container-header__bton {
+.container-header__btn {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -108,18 +108,18 @@
     align-items: center;
     padding: 7rem 0 8rem 0;
 }
- .paragraph {
+ .note{
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 10px;
  }
- .features__cards{
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     gap: 30px;
+ .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
  }
-.card-features {
+.card {
     padding: 35px 40px;
     gap: 15px;
     width: 328px;
@@ -131,17 +131,17 @@
     flex-direction: column;
     gap: 15px;
 }
-.card-features__text{
+.card__header{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
-.card-features__img{
+.card__img{
     width : 47.32px ;
     height: 40.56px
 }
-.card-item{
+.title--small{
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
@@ -166,7 +166,7 @@
   margin-top: -15rem;
 
 }
-.paragraph--business{
+.note--business{
     margin-top: 5rem;
 }
 /* testimonial */
@@ -179,7 +179,7 @@
     background: #F3F3F3;
     gap: 10px;
 }
-.testimonials__cards{
+.cards--testimonial-group{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -206,7 +206,7 @@
     gap: 15px;
 }
 
-.card-item--link{
+.title--person-name{
     font-weight: 600;
     font-size: 14px;
     letter-spacing: 0.2px;
@@ -242,10 +242,10 @@
     justify-content: center;
     gap: 15px;
 }
-.card-item--team-title{
+.title--team{
     margin-top: 2rem;
 }
-.team__cards{
+.cards--team-group{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -333,14 +333,14 @@
 }
 .contact__agency {
     background: #FAFAFA;
-    height: 142px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding:0 10rem 0 10rem;
+    padding:3rem 10rem 20rem 5rem;
     margin-top: 6rem;
 }
+
 .title--contact{ 
     font-size: 24px;
     line-height: 32px;
@@ -353,7 +353,6 @@
 }
 /* footer */
 .footer{
-    height: 526px;
     background: #252B42;
     color: white;
 }
@@ -361,7 +360,7 @@
     font-size: 24px;
     color: #FFFFFF;
 }
-.footer__paragraph{
+.footer__description{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -383,13 +382,10 @@
     text-decoration: none;
     list-style: none;
 }
-.footer__facebook{
-    background: #335BF5;  
-}
 .footer-link{
     text-decoration: none;
 }
-.card-item--title {
+.title--white {
     color: white;
 }
 .footer__pages{
@@ -397,14 +393,15 @@
     flex-direction: row;
     gap: 3rem;
     margin-top: 5rem;
-    padding:0 10rem 0 10rem;
+    margin-bottom: 1rem;
+    padding:0 10rem 0rem 10rem;
 }
-.footer__unordered{
+.footer__list{
     display: flex;
     flex-direction: column;
     gap: 20px
 }
-.footer__list {
+.footer__list-item {
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
@@ -441,7 +438,7 @@
      background-color: #F9F9F9;
      margin-right: -4px;
  }
- .subscribe-content__paragraph {
+ .subscribe-content__description {
     font-weight: 400;
     font-size: 12px;
     line-height: 28px;
@@ -460,14 +457,12 @@
  }
  .footer__figmaland{
     height: 74px;
-    top: 452px;
     background: #16697A;
     width: 100%;
-    margin-top: 5rem;
     display: flex;
     align-items: center;
  }
-.footer__figmaland-text{
+.footer__figmaland-description{
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
